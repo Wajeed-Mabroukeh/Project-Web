@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8200c40c-e541-40e1-93e5-642552b43f1d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lL41R5AP2vn6uxGQthvombKxAT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My Library\Web\Project1\one-page-website-html-css-project-for-practice-master" />
+      <recent name="D:\My Library\Web\Project1\one-page-website-html-css-project-for-practice-master\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\My Library\Web\Project1\one-page-website-html-css-project-for-practice-master\img" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8200c40c-e541-40e1-93e5-642552b43f1d" name="Default Changelist" comment="" />
+      <created>1607362821716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607362821716</updated>
+      <workItem from="1607362822745" duration="9431000" />
+      <workItem from="1607372683512" duration="99000" />
+      <workItem from="1607372783639" duration="1326000" />
+      <workItem from="1607528368884" duration="6648000" />
+      <workItem from="1607713214389" duration="3744000" />
+      <workItem from="1607783231611" duration="643000" />
+      <workItem from="1607803967226" duration="1842000" />
+      <workItem from="1607808687354" duration="367000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="4" key="#Plugins" timestamp="1607808706030">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="4" key="#Plugins/0.0.1366.728@0.0.1366.728" timestamp="1607808706030" />
+    <state x="380" y="135" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607808169528">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="380" y="135" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1607808169528" />
+    <state x="298" y="0" key="CommitChangelistDialog2" timestamp="1607549073451">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="298" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607549073451" />
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1607808606440">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607808606440" />
+    <state x="427" y="393" key="Github.CreateGistDialog" timestamp="1607368009457">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="427" y="393" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1607368009457" />
+    <state x="561" y="261" key="Github.ShareDialog" timestamp="1607368677911">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="561" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1607368677911" />
+    <state x="256" y="27" key="Github.UntrackedFilesDialog" timestamp="1607368691988">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="256" y="27" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607368691988" />
+    <state x="62" y="17" key="SettingsEditor" timestamp="1607808125678">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="62" y="17" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607808125678" />
+    <state x="292" y="132" key="Vcs.Push.Dialog.v2" timestamp="1607808156727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="292" y="132" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607808156727" />
+  </component>
+</project>
