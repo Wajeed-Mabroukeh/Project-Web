@@ -75,7 +75,7 @@ if(isset($_POST['Username']) && isset($_POST['email']) && isset($_POST['Password
     <input type="email" name="email" id="email" placeholder="Email">
     <input type="password" name="Password" id="Password" placeholder="Password">
     <input type="password" name="Password2" id="Password2" placeholder="Repeat Password">
-    <input type="submit" name="Sign Up" value="Sign Up">
+    <input type="button" name="Sign Up" value="Sign Up">
     <div type="text" style="border: 0 ; color: white ; font-size: large">
         <?php
         echo $error;

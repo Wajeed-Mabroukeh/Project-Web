@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     background-size: 100%;
-    background-image: url("../../../../../../Users/hp/Desktop/WebProject_2020/img/1773899.jpg");
+    background-image: url("img/photo-1579546929518-9e396f3cc809.jpeg");
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
@@ -36,7 +36,7 @@ body{
     padding: 14px 10px;
     width: 200px;
     outline: none;
-    color: white;
+    color: black;
     border-radius: 24px;
     transition: 0.25s;
 }
@@ -54,7 +54,7 @@ body{
     padding: 14px 10px;
     width: 200px;
     outline: none;
-    color: white;
+    color: black;
     border-radius: 24px;
     transition: 0.25s;
 }
@@ -82,7 +82,7 @@ body{
     border-color: crimson;
 }
 
-.box input[type = "submit"]{
+.box input[type = "button"]{
     border:0;
     background: none;
     display: block;
@@ -91,11 +91,11 @@ body{
     border: 2px solid crimson;
     padding: 14px 40px;
     outline: none;
-    color: white;
+    color: black;
     border-radius: 24px;
     transition: 0.25s;
     cursor: pointer;
 }
-.box input[type = "submit"]:hover{
+.box input[type = "button"]:hover{
     background: crimson;
 }

@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<form class="box" action="../../../../../../Users/hp/Desktop/WebProject_2020/index.html">
+<form class="box" action="index.html">
     <div type="text" style="border: 0 ; color: white ; font-size: large ; width: 100%">
         <?php
         echo "SUCCESSFULLY LOGGED IN";

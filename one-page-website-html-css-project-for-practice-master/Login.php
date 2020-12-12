@@ -55,8 +55,6 @@ if(isset($_POST['Username']) &&  isset($_POST['Password']) ){
 }
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -66,11 +64,11 @@ if(isset($_POST['Username']) &&  isset($_POST['Password']) ){
 </head>
 <body>
 
-<form class="box" action="Login.php" method="post">
+<form class="box" action="" method="post">
     <h1>Login</h1>
     <input type="text" name="Username" id="Username" placeholder="Username\Email">
     <input type="password" name="Password" id="Password" placeholder="Password">
-    <input type="submit" name="submit" value="Login">
+    <input type="button" name="Login" value="Login">
     <div type="text" style="border: 0 ; color: white ; font-size: large">
         <?php
         echo $error;
