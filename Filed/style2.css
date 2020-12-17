@@ -46,23 +46,6 @@ p {
 	color: crimson;
 }
 
-.cta {
-	display: inline-block;
-	padding: 10px 30px;
-	color: white;
-	background-color: transparent;
-	border: 2px solid crimson;
-	font-size: 2rem;
-	text-transform: uppercase;
-	letter-spacing: .1rem;
-	margin-top: 30px;
-	transition: .3s ease;
-	transition-property: background-color, color;
-}
-.cta:hover {
-	color: white;
-	background-color: crimson;
-}
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
@@ -150,7 +133,7 @@ p {
 	border: 3px solid white;
 	border-radius: 50%;
 	position: relative;
-	display: flex;
+
 	align-items: center;
 	justify-content: center;
 	z-index: 100;
@@ -203,7 +186,6 @@ p {
 #hero {
 	background-image: url(./img/2.jpg);
 	background-size: cover;
-	background-size: 100%;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
@@ -264,6 +246,7 @@ p {
 	animation-delay: 2.5s;
 }
 
+
 /* End Hero Section */
 
 /* Search Section */
@@ -284,6 +267,8 @@ p {
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
+	float: left;
+
 }
 #Search .Search-item {
 	flex-basis: 80%;
@@ -293,38 +278,40 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url("");
 	background-size: cover;
+	background-position: left bottom;
 	margin: 10px 5%;
-	position: relative;
+	position: static;
 	z-index: 1;
 	overflow: hidden;
+	height: 450px;
+
+
+
 }
 #Search .Search-item::after {
 	content: '';
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 0px;
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	opacity: .9;
 	z-index: -1;
 }
-#Search .Search-bottom .icon {
-	height: 80px;
-	width: 80px;
-	margin-bottom: 20px;
-}
+
+
 #Search .Search-item h2 {
 	font-size: 2rem;
-	color: white;
+	color: black;
 	margin-bottom: 10px;
 	text-transform: uppercase;
+	text-align: left  ;
 }
 #Search .Search-item p {
 	color: white;
-	text-align: left;
+	text-align: left ;
 }
 /* End Search Section */
 
@@ -332,7 +319,7 @@ p {
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 10px auto;
 	padding: 100px 0;
 }
 #projects .projects-header h1 {
@@ -350,9 +337,10 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	width: 80%;
-	margin: 20px auto;
+	margin: 20px fill;
 	overflow: hidden;
-	border-radius: 10px;
+	border-radius: 20px;
+	padding: 5px;
 }
 #projects .project-info {
 	padding: 30px;
@@ -382,6 +370,21 @@ p {
 	height: 300px;
 	overflow: hidden;
 	position: relative;
+
+}
+#projects .project-img h1 {
+	font-size: 4rem;
+	font-weight: 900;
+	color: brown;
+	position: absolute;
+}
+
+#projects .project-img h2 {
+	font-size: 1.8rem;
+	font-weight: 900;
+	margin-top: 600px;
+	color: brown;
+	position: absolute;
 }
 #projects .project-img:after {
 	content: '';
@@ -390,7 +393,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	/*background-image: linear-gradient(60deg, #29323c 0%,);*/
 	opacity: .7;
 }
 #projects .project-img img {
@@ -399,6 +402,7 @@ p {
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
+
 /* End Projects section */
 
 /* About Section */
@@ -463,7 +467,6 @@ p {
 	padding: 20px;
 	text-align: center;
 	border-radius: 10px;
-	padding: 30px;
 	margin: 30px;
 	display: flex;
 	justify-content: center;

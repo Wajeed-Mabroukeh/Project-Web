@@ -46,6 +46,23 @@ p {
 	color: crimson;
 }
 
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid crimson;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease;
+	transition-property: background-color, color;
+}
+.cta:hover {
+	color: white;
+	background-color: crimson;
+}
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
@@ -133,7 +150,7 @@ p {
 	border: 3px solid white;
 	border-radius: 50%;
 	position: relative;
-	display: flex;
+
 	align-items: center;
 	justify-content: center;
 	z-index: 100;
@@ -186,7 +203,7 @@ p {
 #hero {
 	background-image: url(./img/2.jpg);
 	background-size: cover;
-	background-size: 100%;
+
 	background-position: top center;
 	position: relative;
 	z-index: 1;
@@ -252,40 +269,47 @@ p {
 /* Search Section */
 #Search .Search {
 	flex-direction: column;
-	text-align: center;
+	text-align: left;
 	max-width: 1500px;
-	margin: 0 auto;
+	margin: 0 ;
 	padding: 100px 0;
 }
 #Search .Search-top {
-	max-width: 500px;
-	margin: 0 auto;
+	max-width: 1000px;
+	margin: 0 ;
 }
 #Search .Search-bottom {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
+
+
 }
-#Search .Search-item {
+#Search .Search-item  {
 	flex-basis: 80%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	padding: 30px;
-	border-radius: 10px;
-	background-image: url("");
+	padding: 0;
+	border-radius: 20px;
+	border: crimson 5px solid;
 	background-size: cover;
-	margin: 10px 5%;
+	margin: 10px ;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	height: 450px;
+	width: 450px;
+
+
 }
-#Search .Search-item::after {
+
+#Search .Search-item ::after {
 	content: '';
-	position: absolute;
+	position: relative;
 	left: 0;
 	top: 0;
 	height: 100%;
@@ -294,14 +318,11 @@ p {
 	opacity: .9;
 	z-index: -1;
 }
-#Search .Search-bottom .icon {
-	height: 80px;
-	width: 80px;
-	margin-bottom: 20px;
-}
+
 #Search .Search-item h2 {
 	font-size: 2rem;
-	color: white;
+	color: black;
+	width: 400px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
@@ -366,6 +387,20 @@ p {
 	overflow: hidden;
 	position: relative;
 }
+#projects .project-img h1 {
+	font-size: 4rem;
+	font-weight: 900;
+	color: brown;
+	position: absolute;
+}
+
+#projects .project-img h2 {
+	font-size: 1.8rem;
+	font-weight: 900;
+	margin-top: 600px;
+	color: brown;
+	position: absolute;
+}
 #projects .project-img:after {
 	content: '';
 	position: absolute;
@@ -373,7 +408,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	/*background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);*/
 	opacity: .7;
 }
 #projects .project-img img {
@@ -446,7 +481,6 @@ p {
 	padding: 20px;
 	text-align: center;
 	border-radius: 10px;
-	padding: 30px;
 	margin: 30px;
 	display: flex;
 	justify-content: center;
@@ -683,17 +717,62 @@ p {
 		margin: 1.5%;
 	}
 	input[type = "text"]{
-		border:0;
 		background-color: white;
 		margin: 20px auto;
 		text-align: center;
-		border: 2px solid red;
+		border: 2px solid red ;
 		padding: 14px 10px;
-		width: 280px;
-		outline: none;
+		width: 280px ;
+		outline: #29323c;
 		color: black;
 		border-radius: 24px;
 		transition: 0.25s;
+		height: auto;
 }}
 
+/*.pagination ul {*/
+/*	list-style: none; list-style-position: outside; line-height: 12px;*/
+
+/*}*/
+/*.pagination ul li {*/
+/*	float: left; font-weight: bold; font-size: 12px;*/
+/*	background: url(img/widget-bg.png) repeat 0 0;*/
+/*	padding: 1px; margin-right: 5px;*/
+/*	border-radius: 6px;*/
+/*	-moz-border-radius: 6px;*/
+/*	-webkit-border-radius: 6px;*/
+/*	-o-border-radius: 6px;*/
+/*	box-shadow: 0px 0px 4px white;*/
+/*	-moz-box-shadow: 0px 0px 4px white;*/
+/*	-webkit-box-shadow: 0px 0px 4px white;*/
+/*	-o-box-shadow: 0px 0px 4px white;*/
+/*	position: relative;*/
+/*	top: -50px;*/
+/*	right: -500px;*/
+/*	width: 50px;*/
+/*	height: 10px;*/
+
+/*}*/
+/*.pagination ul li a {*/
+/*	color: red; padding: 9px 12px 8px 11px; text-shadow: rgba(0,0,0,0.9) 1px 1px 0px; background: url(img/patern.png) repeat 0 0; display: block;*/
+/*	border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;*/
+/*	-o-border-radius: 6px; box-shadow: 0px 0px 8px rgba(0,0,0,0.6) inset;*/
+/*	-moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.6) inset;*/
+/*	-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.6) inset;*/
+/*	-o-box-shadow: 0px 0px 8px rgba(0,0,0,0.6) inset;*/
+
+/*}*/
+/*.pagination ul li a:hover,*/
+/*.pagination ul li.active a {*/
+/*	text-decoration: none; background: url(img/pagination-active.png) repeat 0 0; color: red;  }*/
+/*.pagination ul li.laquo a ,*/
+/*.pagination ul li.raquo a {*/
+/*	padding: 12px 10px 9px 10px;  }*/
+/*.pagination ul li.laquo a span {*/
+/*	background: url(img/laquo.png) no-repeat 0 0;color: red; width: 11px; height: 8px; display: block; }*/
+/*.pagination ul li.raquo a span {*/
+/*	background: url(img/raquo.png) no-repeat 0 0; width: 11px; height: 8px; display: block; }*/
+/*.pagination ul li.dots {*/
+/*	background: transparent; padding-top: 18px; box-shadow: 0px 0px 0px ; -moz-box-shadow: 0px 0px 0px ; -webkit-box-shadow: 0px 0px 0px ; -o-box-shadow: 0px 0px 0px ; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; -o-border-radius: 0px;*/
+/*}*/
 /* End  Media Query For Desktop */

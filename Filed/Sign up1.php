@@ -22,10 +22,13 @@ if(isset($_POST['Username']) && isset($_POST['email']) && isset($_POST['Password
             die();
         }
         else{
-            $srtQuery = 'select * from users where id = (SELECT MAX(id) FROM users)';
+            $srtQuery = 'select * from users ';
             $result = $db -> query($srtQuery);
-            $row = $result -> fetch_array();
-            $id = $row[0]+1;
+            $array = array();
+            while($row = $result->fetch_assoc()) {
+                $array[] = $row;
+            }
+            $id = $array[0]+1;
             $verified = 0;
             $vkey = md5(time().$Username);
             $Password = md5($Password);
@@ -41,7 +44,7 @@ if(isset($_POST['Username']) && isset($_POST['email']) && isset($_POST['Password
                 Thank you for registration with FUN TIME. You can now create your own Watchlist, rate and review movies and shows, get personalized recommendations, and much more. 
                 Please confirm your email address to get the full benefits of your account by clicking this link:'.'</p>';
                 $massage .="<br>";
-                $massage .="<a style='alignment: left font-size: large ' href ='http://localhost/WEB/WebProject_2020/verify.php?vkey=$vkey'>REGISTER YOUR ACCOUNT</a>";
+                $massage .="<a style='alignment: left font-size: large ' href ='http://localhost/Project1/Filed/verify.php?vkey=$vkey'>REGISTER YOUR ACCOUNT</a>";
                 $massage .="<br>";
                 $massage .= '<p style="'.'font-size: large ; color: red; alignment: left">'.'If you received this message but did not attempt to register, it means that someone may have entered your email address when registering with FUNTIME.com, probably by mistake. If this is the case, you can safely disregard this email. No further action is required.
                 If you have questions about using FUN TIME, including instructions and guidelines on how to submit content or how to sign up please visit the FUN TIME Main WebSite.'.'</p>';
@@ -52,7 +55,7 @@ if(isset($_POST['Username']) && isset($_POST['email']) && isset($_POST['Password
                 if(mail($to, $subject , $massage ,$headers ))
                     header('location: thankyou.php');
             }
-            else  header('location: ERROR.php');
+            else  header('thankyou: ERROR.php');
 
         }
     }
@@ -70,13 +73,13 @@ if(isset($_POST['Username']) && isset($_POST['email']) && isset($_POST['Password
 
 <form class="box" action="SignUp.php" method="post">
 
-    <h1>Sign Up</h1>
+    <h1><label for="Username">Sign Up</label></h1>
     <input type="text" name="Username" id="Username" placeholder="Username">
     <input type="email" name="email" id="email" placeholder="Email">
     <input type="password" name="Password" id="Password" placeholder="Password">
     <input type="password" name="Password2" id="Password2" placeholder="Repeat Password">
-    <input type="button" name="Sign Up" value="Sign Up">
-    <div type="text" style="border: 0 ; color: white ; font-size: large">
+    <input type="submit" name="Sign Up" value="Sign Up">
+    <div type="text" style="border: 0 ; color: black ; font-size: large">
         <?php
         echo $error;
         ?>

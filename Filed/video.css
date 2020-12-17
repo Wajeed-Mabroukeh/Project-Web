@@ -1,0 +1,50 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+body{
+    margin: 0;
+    background-size: cover;
+    background-image: url("img/1155047.jpg");
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+
+}
+brand{
+    min-height: 8vh;
+    background-color: rgba(31, 30, 30, 0.24);
+    transition: .3s ease background-color;
+}
+
+.brand h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.brand p {
+    font-size: 1rem;
+    /*text-transform: uppercase;*/
+    color: black;
+    text-align: left;
+    min-width: 40px;
+    border: dimgray 5px;
+    border-radius: 10px;
+
+}
+
+.video
+{
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: inherit;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video iframe{
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}

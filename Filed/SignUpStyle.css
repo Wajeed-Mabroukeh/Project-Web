@@ -21,13 +21,13 @@ body{
 }
 
 .box h1{
+    text-effect: none;
     color: crimson;
     text-transform: uppercase;
     font-weight: 500;
 }
 
 .box input[type = "text"],.box input[type = "password"]{
-    border:0;
     background: none;
     display: block;
     margin: 20px auto;
@@ -64,7 +64,6 @@ body{
 }
 
 .box div[type = "text"]{
-    border:0;
     background: none;
     display: block;
     margin: 20px auto;
@@ -73,7 +72,7 @@ body{
     padding: 14px 10px;
     width: 200px;
     outline: none;
-    color: white;
+    color: black;
     border-radius: 24px;
     transition: 0.25s;
 }
@@ -82,7 +81,7 @@ body{
     border-color: crimson;
 }
 
-.box input[type = "button"]{
+.box input[type = "submit"]{
     border:0;
     background: none;
     display: block;
@@ -96,6 +95,6 @@ body{
     transition: 0.25s;
     cursor: pointer;
 }
-.box input[type = "button"]:hover{
+.box input[type = "submit"]:hover{
     background: crimson;
 }
