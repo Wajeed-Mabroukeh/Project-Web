@@ -34,6 +34,7 @@ if(isset($_POST['Username']) && isset($_POST['email']) && isset($_POST['Password
             $Password = md5($Password);
             $insert = "INSERT INTO users(id,username,email,password,vkey,verified) VALUES('$id','$Username','$Email','$Password','$vkey','$verified')";
             $insertion = $db -> query($insert);
+
             if($insertion){
                 //SEND EMAIL
                 $to = $Email;
@@ -52,8 +53,10 @@ if(isset($_POST['Username']) && isset($_POST['email']) && isset($_POST['Password
                 $headers .= "MIME-Version: 1.0" ."\r\n";
                 $headers .= "Content-type:text/html;charset=UTF-8" ."\r\n";
 
-                if(mail($to, $subject , $massage ,$headers ))
-                    header('location: thankyou.php');
+                if(mail($to, $subject , $massage ,$headers )) {
+                        document.getElementsByClassName("popup")[0].classList.add("active");
+
+                }
             }
             else  header('thankyou: ERROR.php');
 
@@ -68,8 +71,25 @@ if(isset($_POST['Username']) && isset($_POST['email']) && isset($_POST['Password
     <meta charset="utf-8">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="SignUpStyle.css">
+<!--    <link rel="stylesheet" href="Pop%20up.css">-->
 </head>
 <body>
+<div class="popup center">
+    <div class="icon">
+        <i class="fa fa-check"></i>
+    </div>
+    <div class="title">
+        Success!!
+    </div>
+    <div class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil provident voluptatem nulla placeat
+    </div>
+    <div class="dismiss-btn">
+        <button id="dismiss-popup-btn">
+            OK
+        </button>
+    </div>
+</div>
 
 <form class="box" action="SignUp.php" method="post">
 
@@ -78,13 +98,13 @@ if(isset($_POST['Username']) && isset($_POST['email']) && isset($_POST['Password
     <input type="email" name="email" id="email" placeholder="Email">
     <input type="password" name="Password" id="Password" placeholder="Password">
     <input type="password" name="Password2" id="Password2" placeholder="Repeat Password">
-    <input type="submit" name="Sign Up" value="Sign Up">
+    <input type="submit" name="Sign Up" value="Sign Up" id="Sign Up">
     <div type="text" style="border: 0 ; color: black ; font-size: large">
         <?php
         echo $error;
         ?>
     </div>
 </form>
-
+<script src="app.js"></script>
 </body>
 </html>

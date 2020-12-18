@@ -22,13 +22,17 @@ brand{
 
 .brand p {
     font-size: 1rem;
-    /*text-transform: uppercase;*/
     color: black;
     text-align: left;
-    min-width: 40px;
-    border: dimgray 5px;
+    border: dimgray 2px solid;
     border-radius: 10px;
+    left: 0;
+    width: 300px;
+    height: 250px;
 
+}
+.brand span{
+    font-size: 2rem;
 }
 
 .video
@@ -38,13 +42,17 @@ brand{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     opacity: inherit;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 .video iframe{
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
+    transform: translate(-50%,-50%);
+    border: dimgray 5px solid;
+    border-radius: 20px;
 }
+ .meta { font-size: 9px; color: dimgray; text-transform: uppercase; padding-bottom: 13px; }
+ .meta .right { width: 225px; }
+ .meta .rating-holder { float: left; }
+ .meta .rating-holder p { float: left; font-size: 15px ;}
+ .meta .rating { float: left; background: url(img/rating.png) no-repeat 0 0; width: 85px; height: 15px; margin-top: 4px; margin-left: 4px; position: relative;  }
+ .meta .rating span { background: url(img/rating.png) no-repeat 0 bottom; height: 15px; display: block; position: relative; top: 0; left: 0; }
