@@ -20,7 +20,7 @@
 <body>
 
     <div class="brand" >
-        <h2>name video</h2>
+        <h2 >Kung Fu Master<span></span></h2>
         <p> <span>Description</span><br>
             Human Stories in the Qur’an is an Egyptian animated series The series revolves around the story of the late writer Ahmed Bahjat, and the episodes of the series deal with the human stories contained in the Holy Quran in a realistic narrative framework based on
             religious truth</p>

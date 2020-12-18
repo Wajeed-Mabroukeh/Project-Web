@@ -14,17 +14,22 @@ brand{
     transition: .3s ease background-color;
 }
 
-.brand h2 {
-    font-size: 3rem;
+.brand h2  {
+    font-size: 2rem;
     text-transform: uppercase;
-    color: black;
+    position: relative;
+    color: crimson;
+    width: 325px;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
 }
+
 
 .brand p {
     font-size: 1rem;
     color: black;
     text-align: left;
-    border: dimgray 2px solid;
+    border: crimson 2px solid;
     border-radius: 10px;
     left: 0;
     width: 300px;
@@ -47,7 +52,7 @@ brand{
 }
 .video iframe{
     transform: translate(-50%,-50%);
-    border: dimgray 5px solid;
+    border: crimson 5px solid;
     border-radius: 20px;
 }
  .meta { font-size: 9px; color: dimgray; text-transform: uppercase; padding-bottom: 13px; }
